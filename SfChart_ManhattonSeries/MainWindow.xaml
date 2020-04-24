@@ -1,0 +1,44 @@
+﻿<Window x:Class="SfChart_ManhattonSeries.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SfChart_ManhattonSeries"
+        xmlns:chart="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
+        Title="SfChart Manhatton Series" WindowState="Normal"
+        x:Name="window" 
+        Height="500" Width="725">
+    
+    <Grid>
+        
+        <Grid.DataContext>
+            <local:ViewModel/>
+        </Grid.DataContext>
+
+        <chart:SfChart3D x:Name="chart" Rotation="43" Tilt="10" Margin="30,35,40,40" 
+                         PerspectiveAngle="80" EnableRotation="True">
+
+            <chart:SfChart3D.PrimaryAxis>
+                <chart:NumericalAxis3D Interval="1"/>
+            </chart:SfChart3D.PrimaryAxis>
+
+            <chart:SfChart3D.SecondaryAxis>
+                <chart:NumericalAxis3D/>
+            </chart:SfChart3D.SecondaryAxis>
+
+            <chart:SfChart3D.DepthAxis>
+                <chart:NumericalAxis3D Interval="1"/>
+            </chart:SfChart3D.DepthAxis>
+
+            <chart:LineSeries3D XBindingPath="XValue"                                
+                                YBindingPath="YValue"                         
+                                ItemsSource="{Binding Data1}" 
+                                Label="First"/>
+
+            <chart:LineSeries3D XBindingPath="XValue"                                
+                                YBindingPath="YValue"                         
+                                ItemsSource="{Binding Data2}" 
+                                Label="Second"/>
+
+        </chart:SfChart3D>
+
+    </Grid>    
+</Window>
