@@ -1,4 +1,16 @@
-# 3D Chart with DepthAxis (Z Axis)
+# Depth axis in WPF 3D Chart
+
+(ChartAxis)[https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#] is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis and a horizontal (X) axis. 
+
+(PrimaryAxis)[https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~PrimaryAxis.html] – Gets or sets the horizontal x axis for the chart.
+
+(SecondaryAxis)[https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~SecondaryAxis.html] – Gets or sets the vertical y axis for the chart.
+
+Additionally, SfChart3D have horizontal (z) Axis called Depth axis.
+
+# Depth axis
+
+DepthAxis - Gets or sets the horizontal z axis for the chart.
 
 DepthAxis helps us to plot chart data based on X, Y and Z Co – ordinates. This feature is supported in Line, Column, Bar, StackingColumnSeries, StackingBarSeries and Scatter series. 
 
