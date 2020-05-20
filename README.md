@@ -55,7 +55,7 @@ The following code example illustrates how to create Depth Axis.
         chart.Series.Add(series1);
         this.Content = chart;
 ```
-[3D Chart with Z axis](!SfChart3D_ZAxis.png)
+![3D Chart with Z axis](SfChart3D_ZAxis.png)
 
 #3D Manhattan Chart
 
@@ -111,4 +111,4 @@ In this type of chart, multiple series can be plotted in [DepthAxis](https://hel
         this.Content = chart;
 
 ```
-[3D chart in WPF](Manhattan_Chart.png)
+![3D chart in WPF](Manhattan_Chart.png)
